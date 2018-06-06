@@ -1,0 +1,27 @@
+{
+  "name": "jest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Philippe De Pauw - Waterschoot",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.0.1",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.1.0",
+    "jest-fetch-mock": "^1.6.2",
+    "regenerator-runtime": "^0.11.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:notify": "jest --notify --config=config.json",
+    "test:notify:watch": "jest --notify --config=config.json"
+  },
+  "jest": {
+    "resetMocks": true,
+    "setupFiles": [
+      "./setupTests.js"
+    ]
+  }
+}
